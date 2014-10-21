@@ -18,11 +18,13 @@ p { float: left;
 
 p:first-of-type { margin-top: 5%; }
 
-p.credit { margin-top: 4em;
-           width: 45%; }
+div.credit { margin-top: 4em;
+             width: 45%;
+             float: left; }
+
+div.credit p { width: 100%; }
 
 img.vertical-screenshot { max-width: 20%;
-                          /* margin: 4em 3em 1em 1em; */
                           margin: 5% 5% 0 0; 
                           float: left; }
 
@@ -34,6 +36,6 @@ strong { font-weight: 800; }
 
 div.clear { clear: both; }
 
-img#appstorebadge { float: left;
-                    display: inline-block;
-                    margin: 15px; }
+img#appstorebadge { width: 135px;
+                    display: block; 
+                    margin: 7em auto; }
