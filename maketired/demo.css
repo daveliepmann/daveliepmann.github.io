@@ -2,7 +2,10 @@
              src: url("fonts/Roboto-Regular.ttf"); }
 
 body { font-family: Roboto;
-       font-size: large; }
+       font-size: large;
+       background-color: #ffefff;
+       /* background-color: rgba(245,159,32,0.1); */
+       color: #0C0C0C; }
 
 h1,h2,h3,h4,h5 { font-family: Roboto; }
 
@@ -17,6 +20,8 @@ p { float: left;
     line-height: 1.6em; }
 
 p:first-of-type { margin-top: 5%; }
+
+a { color: #010101; }
 
 div.credit { margin-top: 4em;
              width: 45%;
@@ -36,6 +41,7 @@ strong { font-weight: 800; }
 
 div.clear { clear: both; }
 
-img#appstorebadge { width: 135px;
+img#appstorebadge { min-width: 135px;
+                    width: 50%;
                     display: block; 
                     margin: 7em auto; }
