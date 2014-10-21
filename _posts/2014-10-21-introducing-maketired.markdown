@@ -8,29 +8,48 @@ I am releasing **[make tired](/maketired)**, a conditioning workout generator fo
 iOS. It's an iPhone and iPad app I made that creates short, intense
 workouts to make you tired after strength training.
 
+![make tired app screenshot](/maketired/mockups/maketired-iPhone5-equipment_iphone_black_portrait.png)
+
 The idea is that you do your regular strength training and then use
-the app to whip up a random conditioning workout. It might give you a
-fundamental workout, for instance:
+the app to whip up a random conditioning workout. I built it to
+scratch an itch, namely, lifting weights renders me temporarily too
+stupid to think up my own circuit workout combinations.
+
+So I fired up a Clojure REPL and coded up a list of workouts I
+consider fundamental, like:
 
 {% highlight clojure %}
 {:workout "burpees for time"
- :timer-init 300}
+ :timer-init 300
+ ;; NB: this example has been greatly simplified
+ :instructions "5 minutes"}
+{:workout "400-meter sprints"
+ :timer-init 0
+ :instructions "Three sprints"
+ :equipment [:place-to-run]}
 {% endhighlight %}
 
-...or the app might randomly generate a circuit from a set of
-templates. Here's a subset of those templates:
+I also created a set of templates into which the app could insert
+exercises to generate circuit workouts. The randomness in this process
+promises both movement variety and workout novelty.
 
 {% highlight clojure %}
-[:push :pull :abs]
-[:explosive :whole-body :active-rest]
-[:whole-body :upper-body :abs]
-[:upper-body :lower-body :whole-body :rest]
+(def templates
+    [[:push :pull :abs]
+     [:explosive :whole-body :active-rest]
+     [:whole-body :upper-body :abs]
+     [:upper-body :lower-body :whole-body :rest]])
 {% endhighlight %}
 
-Using one of these methods, the app creates a workout between 5 and 20
-minutes long. The workout includes a timer and exercise instructions,
-though the user is assumed to have a basic level of knowledge in these
-already. (In the future I'd like to add GIF-style exercise demonstrations.)
+Of course, there's a long list of exercises stored as Clojure maps,
+each with a set denoting the types of exercises it qualifies as (push,
+pull, explosive, *et cetera*).
 
-I built it using ClojureScript and Cordova. Many thanks go to [Leitha Matz](http://www.leithamatz.com/),
+After the basic workout generation was complete, I used Cordova to
+make the ClojureScript-and-HTML UI palatable for XCode.
+
+To see more, check out the [app page](/maketired) and download on the
+Apple App Store.
+
+Many thanks go to [Leitha Matz](http://www.leithamatz.com/),
 [Lauren Papot](http://laurenpapot.com/), and [Jack Rusher](http://jackrusher.com/) for design feedback and test drives.
