@@ -33,3 +33,7 @@ img.horizontal-screenshot { max-width: 50%;
 strong { font-weight: 800; }
 
 div.clear { clear: both; }
+
+img#appstorebadge { float: left;
+                    display: inline-block;
+                    margin: 15px; }
