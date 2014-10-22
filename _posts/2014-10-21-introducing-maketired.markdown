@@ -31,14 +31,14 @@ consider fundamental, like:
 
 I also created a set of templates into which the app could insert
 exercises to generate circuit workouts. The randomness in this process
-promises both movement variety and workout novelty.
+promises both movement variety and workout novelty. These are but a
+subset of the full template `def`:
 
 {% highlight clojure %}
-(def templates
-    [[:push :pull :abs]
-     [:explosive :whole-body :active-rest]
-     [:whole-body :upper-body :abs]
-     [:upper-body :lower-body :whole-body :rest]])
+[:push :pull :abs]
+[:explosive :whole-body :active-rest]
+[:whole-body :upper-body :abs]
+[:upper-body :lower-body :whole-body :rest]
 {% endhighlight %}
 
 Of course, there's a long list of exercises stored as Clojure maps,
