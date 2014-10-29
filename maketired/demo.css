@@ -11,6 +11,8 @@ h1,h2,h3,h4,h5 { font-family: Roboto; }
 
 h1 { font-size: xx-large; }
 
+hgroup > a { float: right; }
+
 article { width: 760px;
           margin: 0 auto; }
 
@@ -41,7 +43,9 @@ strong { font-weight: 800; }
 
 div.clear { clear: both; }
 
-img#appstorebadge { min-width: 135px;
-                    width: 50%;
-                    display: block; 
-                    margin: 7em auto; }
+img.appstorebadge { min-width: 135px;
+                    display: block;
+                    margin-right: 2em; }
+
+img.bottombadge { width: 50%;
+                  margin: 1em auto; }
