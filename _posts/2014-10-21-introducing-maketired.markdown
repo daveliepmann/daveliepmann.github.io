@@ -43,7 +43,10 @@ subset of the full template `def`:
 
 Of course, there's a long list of exercises stored as Clojure maps,
 each with a set denoting the types of exercises it qualifies as (push,
-pull, explosive, *et cetera*).
+pull, explosive, *et cetera*). I love thinking, prototyping, and
+refining my ideas in Clojure data structures. They provide a
+straightforward path for fleshing out an idea into a concept and then
+a working data substrate for a function.
 
 After the basic workout generation was complete, I used Cordova to
 make the ClojureScript-and-HTML UI palatable for XCode.
