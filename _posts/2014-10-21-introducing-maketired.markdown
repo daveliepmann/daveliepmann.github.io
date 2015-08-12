@@ -52,4 +52,4 @@ To see more, check out the [app page](/maketired) and download on the
 Apple App Store.
 
 Many thanks go to [Leitha Matz](http://www.leithamatz.com/),
-[Lauren Papot](http://laurenpapot.com/), and [Jack Rusher](http://jackrusher.com/) for design feedback and test drives.
+[Lauren Papot](http://laurenpapot.com/), and [Jack Rusher](http://jackrusher.com/) for design collaboration and test drives.
