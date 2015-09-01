@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AWS Lambda CLI for Clojure"
-date:   2015-09-01
+date:   2015-09-01 11:50:00
 categories: clojure aws cli aws-lambda
 ---
 In case you're also playing with [Tim Wagner and Bryan Moffatt's AWS
